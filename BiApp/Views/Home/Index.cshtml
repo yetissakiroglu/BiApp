@@ -1,0 +1,14 @@
+﻿@model FacebookApp.Models.MeModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@foreach (var item in Model.data)
+{
+    <span>Id</span> @item.id
+    <span>Name</span> @item.name
+    <br />
+}
+
